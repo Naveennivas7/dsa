@@ -14,6 +14,10 @@ public class Celing {
 	//return index if it exist
 	//return -1 if it does not exist
 	static int celing(int arr[],int target){
+
+        if(target>arr[arr.length-1]){
+            return -1;
+        }
 		int start = 0;
 		int end =arr.length-1;
 		while(start<=end){
