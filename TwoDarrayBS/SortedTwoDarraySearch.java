@@ -11,23 +11,14 @@ public class SortedTwoDarraySearch {
 
     //return index if it exist
     //return -1 if it does not exist
-    static int search(int arr[][],int target){
+    static int search(int [][]arr,int target){
 
-        int row=0;
-        int col=arr.length-1;
+        int row=arr.length;
+        int col=arr[0].length;
 
-        while(row<arr.length && col>=0){
-            if(arr[row][col]==target){
-                System.out.println("row:"+row+" col:"+col);
-                return 1;
-            }
-            else if(arr[row][col]<target){
-                row++;
-            }
-            else{
-                col--;
-            }
-        }
+       if(row==0){
+        
+       }
         return -1;
     }               
     
